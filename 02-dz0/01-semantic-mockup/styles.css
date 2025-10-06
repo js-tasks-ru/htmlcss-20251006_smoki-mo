@@ -1,0 +1,49 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+header {
+  background: red;
+}
+
+nav {
+  background: orange;
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+main {
+  background: green;
+  padding: 10px;
+}
+
+article {
+  background: blue;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: purple;
+  font-size: 50px;
+}
+
+header,
+footer {
+  text-align: center;
+}
