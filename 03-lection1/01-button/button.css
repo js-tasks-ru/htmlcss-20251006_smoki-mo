@@ -2,7 +2,7 @@
   border: none;
   cursor: pointer;
   color: var(--white);
-  height: var(--height-1);
+  height: 48px;
   border-radius: 8px;
   font-family: Roboto;
   font-weight: 500;
