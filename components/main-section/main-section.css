@@ -2,3 +2,9 @@
   background: #f9fafc;
   padding: 68px 0 204px;
 }
+
+.main-section__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
