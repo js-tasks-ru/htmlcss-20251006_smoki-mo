@@ -47,24 +47,8 @@
 
 .skeleton__rectangle_half {
   width: 50%;
-  background: linear-gradient(
-    92.51deg,
-    var(--grey-2) 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    var(--grey-2) 102.52%
-  );
 }
 
 .skeleton__rectangle_third {
   width: 33%;
-  background: linear-gradient(
-    92.51deg,
-    var(--grey-2) 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    var(--grey-2) 102.52%
-  );
 }
