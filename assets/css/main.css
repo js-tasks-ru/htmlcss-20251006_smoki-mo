@@ -32,3 +32,8 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: var(--blue-1);
+}
