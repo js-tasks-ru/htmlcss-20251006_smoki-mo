@@ -1,8 +1,5 @@
 .modal {
   display: none;
-}
-
-.modal__overlay {
   position: fixed;
   top: 0;
   right: 0;
