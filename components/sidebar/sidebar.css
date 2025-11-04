@@ -1,0 +1,36 @@
+.sidebar {
+  display: grid;
+  gap: 32px;
+}
+
+.sidebar__title {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+}
+
+.sidebar__list {
+  list-style-type: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.sidebar__item {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sidebar__link {
+  color: var(--black);
+}
+
+.sidebar__link_current {
+  color: #d84910;
+  pointer-events: none;
+}

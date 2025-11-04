@@ -1,6 +1,13 @@
 .header {
   border-bottom: 1px solid var(--grey-2);
   padding: 96px 0 77px;
+  background: var(--white);
+}
+
+.header_inner {
+  border: none;
+  padding: 41px 0;
+  background: unset;
 }
 
 .header__title {

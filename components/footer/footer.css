@@ -4,6 +4,13 @@
   font-family: Inter;
   color: var(--black);
   padding: 71px 0 136px;
+  background: var(--white);
+}
+
+.footer_inner {
+  border: none;
+  padding: 56px 0;
+  background: unset;
 }
 
 .footer__title {
@@ -11,6 +18,13 @@
   font-size: 38px;
   line-height: 48px;
   margin: 0;
+}
+
+.footer__title_small {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--grey-3);
 }
 
 .footer__description {
