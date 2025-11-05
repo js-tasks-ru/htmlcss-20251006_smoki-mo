@@ -1,15 +1,28 @@
 .preview {
-  border-radius: 12px;
-  background: var(--white);
-  box-shadow: 0px 2px 4px 0px #2124290d;
-  padding: 32px 48px;
+  padding: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .preview {
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0px 2px 4px 0px #2124290d;
+    padding: 32px 48px;
+  }
 }
 
 .preview__title {
   font-family: Inter;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 20px;
+  line-height: 26px;
   color: var(--grey-4);
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .preview__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
