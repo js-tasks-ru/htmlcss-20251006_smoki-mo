@@ -9,6 +9,7 @@
 @import '../../components/card/card.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/preview/preview.css';
+@import '../../components/icon/icon.css';
 
 :root {
   --white: #ffffff;
