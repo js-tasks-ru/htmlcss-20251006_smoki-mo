@@ -1,10 +1,10 @@
 .icon {
+  --size: 24px;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: var(--size);
+  height: var(--size);
 }
 
 .icon_small {
-  width: 16px;
-  height: 16px;
+  --size: 16px;
 }
