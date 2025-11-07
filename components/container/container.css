@@ -2,7 +2,7 @@
   padding: 0 16px;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .container_small {
     max-width: 640px;
     margin: 0 auto;
