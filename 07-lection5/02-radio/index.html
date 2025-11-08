@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<!-- Страница радио -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./radio.css">
-    </head>
-    <body>
-
-    </body>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./radio.css" />
+    <style>
+      .form {
+        padding: 20px 200px;
+      }
+      .form__row {
+        margin: 0 0 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form__row">
+        <label class="radio">
+          <input
+            class="radio__input"
+            type="radio"
+            name="radio_state"
+            value="default"
+          />
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__circle"></div>
+            </div>
+            <div class="radio__label">Default</div>
+          </div>
+        </label>
+      </div>
+      <div class="form__row">
+        <label class="radio">
+          <input
+            class="radio__input"
+            type="radio"
+            name="radio_state"
+            value="checked"
+            checked
+          />
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__circle"></div>
+            </div>
+            <div class="radio__label">Checked</div>
+          </div>
+        </label>
+      </div>
+      <div class="form__row">
+        <label class="radio">
+          <input
+            class="radio__input"
+            type="radio"
+            name="radio_state_disabled"
+            value="default_disabled"
+            disabled
+          />
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__circle"></div>
+            </div>
+            <div class="radio__label">Default disabled</div>
+          </div>
+        </label>
+      </div>
+      <div class="form__row">
+        <label class="radio">
+          <input
+            class="radio__input"
+            type="radio"
+            name="radio_state_disabled"
+            value="checked_disabled"
+            checked
+            disabled
+          />
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__circle"></div>
+            </div>
+            <div class="radio__label">Checked disabled</div>
+          </div>
+        </label>
+      </div>
+    </form>
+  </body>
 </html>
