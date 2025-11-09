@@ -1,8 +1,23 @@
 .container {
-  max-width: 1110px;
-  margin: 0 auto;
+  padding: 0 16px;
 }
 
-.container_small {
-  max-width: 640px;
+@media (min-width: 768px) {
+  .container_small {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .container_small {
+    max-width: 640px;
+  }
 }
