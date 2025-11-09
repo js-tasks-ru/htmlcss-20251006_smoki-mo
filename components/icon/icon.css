@@ -1,0 +1,9 @@
+.icon {
+  --size: 24px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.icon_small {
+  --size: 16px;
+}
