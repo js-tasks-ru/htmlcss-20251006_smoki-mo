@@ -1,28 +1,36 @@
 .input {
-  display: inline-grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  grid-row-gap: 5px;
+}
+
+.input__label {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
+
+.input_disabled .input__label {
+  color: var(--grey-2);
+}
+
+.input__container {
+  position: relative;
+  margin: 5px 0 0;
 }
 
 .input__input {
-  grid-area: 2 / 1 / 3 / 3;
+  width: 100%;
+  height: 56px;
   border-radius: 8px;
   background: var(--white);
   border: 1px solid var(--grey-2);
   outline: none;
-  padding: 14px 24px;
+  padding: 14px 56px 14px 24px;
   font-family: Inter;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
   color: var(--grey-4);
-  text-overflow: ellipsis;
-}
-
-.input_success .input__input,
-.input_error .input__input {
-  padding-right: 56px;
 }
 
 .input_error .input__input {
@@ -50,46 +58,34 @@
   visibility: hidden;
 }
 
-.input__label {
-  grid-area: 1 / 1 / 2 / 3;
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--grey-3);
-}
-
-.input__input:disabled ~ .input__label {
-  color: var(--grey-2);
-}
-
-.input__icon-success,
-.input__icon-error {
-  grid-area: 2 / 2 / 3 / 3;
+.input__icon {
   width: 56px;
   margin: 0 1px 0 0;
   display: grid;
   place-items: center;
   cursor: text;
   visibility: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
 
-.input__icon-success {
+.input__icon_success {
   color: var(--blue-2);
 }
 
-.input__icon-error {
+.input__icon_error {
   color: var(--red);
 }
 
-.input_success .input__icon-success,
-.input_error .input__icon-error {
+.input_success .input__icon_success,
+.input_error .input__icon_error {
   visibility: visible;
 }
 
-.input__input:disabled ~ .input__icon-success,
-.input__input:disabled ~ .input__icon-error {
+.input__input:disabled ~ .input__icon_success,
+.input__input:disabled ~ .input__icon_error {
   pointer-events: none;
   color: var(--grey-3);
 }
