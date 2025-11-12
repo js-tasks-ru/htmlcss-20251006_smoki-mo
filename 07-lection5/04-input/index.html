@@ -1,11 +1,235 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <style>
+      .form {
+        padding: 20px 200px;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+      }
+      .form__row {
+        margin: 0 0 16px;
+      }
+      .form__input {
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <div>
+        <div class="form__row">
+          <div class="input form__input">
+            <label class="input__label" for="default">Label</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="default"
+                type="text"
+                name="default"
+                value=""
+                placeholder="Placeholder"
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="input form__input">
+            <label class="input__label" for="filled">Focus</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="filled"
+                type="text"
+                name="filled"
+                value="Filled input"
+                placeholder="Placeholder"
+                autofocus
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="input input_success form__input">
+            <label class="input__label" for="success">Success</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="success"
+                type="text"
+                name="success"
+                value="Success"
+                placeholder="Placeholder"
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="input input_error form__input">
+            <label class="input__label" for="error">Error</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="error"
+                type="text"
+                name="error"
+                value="Error"
+                placeholder="Placeholder"
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="form__row">
+          <div class="input input_disabled form__input">
+            <label class="input__label" for="default_disabled">Label</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="default_disabled"
+                type="text"
+                name="default_disabled"
+                value=""
+                placeholder="Placeholder"
+                disabled
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="input input_disabled form__input">
+            <label class="input__label" for="filled_disabled">Focus</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="filled_disabled"
+                type="text"
+                name="filled_disabled"
+                value="Filled input"
+                placeholder="Placeholder"
+                autofocus
+                disabled
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="input input_success input_disabled form__input">
+            <label class="input__label" for="success_disabled">Success</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="success_disabled"
+                type="text"
+                name="success_disabled"
+                value="Success"
+                placeholder="Placeholder"
+                disabled
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="input input_error input_disabled form__input">
+            <label class="input__label" for="error_disabled">Error</label>
+            <div class="input__container">
+              <input
+                class="input__input"
+                id="error_disabled"
+                type="text"
+                name="error_disabled"
+                value="Error"
+                placeholder="Placeholder"
+                disabled
+              />
+              <div class="input__icon input__icon_success">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#success" />
+                </svg>
+              </div>
+              <div class="input__icon input__icon_error">
+                <svg class="icon">
+                  <use href="../../assets/images/icons.svg#error" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
