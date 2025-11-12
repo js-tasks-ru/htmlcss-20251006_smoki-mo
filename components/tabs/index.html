@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./tabs.css" />
+    <style>
+      .demo {
+        padding: 20px 0;
+      }
+      .demo-container {
+        padding: 0 20px;
+      }
+      .demo-content {
+        padding: 40px 0;
+      }
+      @media (min-width: 768px) {
+        .demo-container {
+          padding: 0 200px;
+        }
+      }
+    </style>
+  </head>
+  <body class="demo">
+    <div class="tabs">
+      <input class="tabs__input" id="tab-1" type="radio" name="tab" checked />
+      <input class="tabs__input" id="tab-2" type="radio" name="tab" />
+      <input class="tabs__input" id="tab-3" type="radio" name="tab" />
+      <div class="tabs__scroller">
+        <div class="demo-container">
+          <ul class="tabs__list">
+            <li>
+              <label class="tabs__label" for="tab-1">All components</label>
+            </li>
+            <li><label class="tabs__label" for="tab-2">Complex</label></li>
+            <li><label class="tabs__label" for="tab-3">Simple</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tabs__content tabs__content_1 demo-content">
+        <div class="demo-container">All components</div>
+      </div>
+      <div class="tabs__content tabs__content_2 demo-content">
+        <div class="demo-container">Complex components</div>
+      </div>
+      <div class="tabs__content tabs__content_3 demo-content">
+        <div class="demo-container">Simple components</div>
+      </div>
+    </div>
+  </body>
+</html>

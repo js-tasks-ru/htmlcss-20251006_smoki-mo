@@ -1,0 +1,58 @@
+.tabs {
+  position: relative;
+  overflow: hidden;
+}
+
+.tabs__input {
+  position: absolute;
+  left: -100vw;
+}
+
+.tabs__scroller {
+  overflow: hidden;
+  border-bottom: 1px solid var(--grey-2);
+  background: var(--white);
+}
+
+.tabs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.tabs__label {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  border-bottom: 5px solid transparent;
+  padding: 0 0 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#tab-1:checked ~ .tabs__scroller .tabs__label[for='tab-1'],
+#tab-2:checked ~ .tabs__scroller .tabs__label[for='tab-2'],
+#tab-3:checked ~ .tabs__scroller .tabs__label[for='tab-3'],
+#tab-4:checked ~ .tabs__scroller .tabs__label[for='tab-4'] {
+  color: var(--black);
+  border-bottom: 5px solid var(--black);
+  pointer-events: none;
+}
+
+.tabs__content {
+  display: none;
+}
+
+#tab-1:checked ~ .tabs__content_1,
+#tab-2:checked ~ .tabs__content_2,
+#tab-3:checked ~ .tabs__content_3,
+#tab-4:checked ~ .tabs__content_4 {
+  display: block;
+}
