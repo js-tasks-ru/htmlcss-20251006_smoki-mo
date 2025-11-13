@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="container">
-        <div class="header__container">
+        <div class="header__top">
+          <button
+            class="burger-menu__open header__burger"
+            id="burger-menu-open"
+            type="button"
+          >
+            <svg class="icon">
+              <use href="./assets/images/icons.svg#menu" />
+            </svg>
+          </button>
+          <div class="burger-menu header__menu" id="burger-menu">
+            <div class="header header_in-menu">
+              <div class="container">
+                <div class="header__top">
+                  <button
+                    class="burger-menu__close"
+                    id="burger-menu-close"
+                    type="button"
+                  >
+                    <svg class="icon">
+                      <use href="./assets/images/icons.svg#x" />
+                    </svg>
+                  </button>
+                  <svg class="logo header__logo">
+                    <use href="./assets/images/logo.svg" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <aside class="sidebar sidebar_menu">
+                <section>
+                  <h4 class="sidebar__title">Components</h4>
+                  <nav>
+                    <ul class="sidebar__list">
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Modal</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Tooltip</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Avatar</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Calendar</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link sidebar__link_current" href="#"
+                          >Histogram</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Custom form elements</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </section>
+              </aside>
+            </div>
+          </div>
           <svg class="logo header__logo">
-            <use href="./assets/images/logo.svg"/>
+            <use href="./assets/images/logo.svg" />
           </svg>
-          <h1 class="header__title">Reusable component library</h1>
+          <div class="header__theme-changer">Theme toggler</div>
         </div>
+        <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
     <main class="main-section">
@@ -96,7 +160,12 @@
     <footer class="footer">
       <div class="container container_small">
         <h2 class="footer__title">About</h2>
-        <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+        <p class="footer__description">
+          This project is a collection of professionally designed, pre-built,
+          fully responsive HTML snippets you can drop into your projects. Get
+          started by checking out our free preview components, or browsing the
+          PNG previews in the categories you're most curious about.
+        </p>
       </div>
     </footer>
   </body>
