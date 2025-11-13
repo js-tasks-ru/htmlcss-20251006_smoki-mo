@@ -11,6 +11,7 @@
 @import '../../components/preview/preview.css';
 @import '../../components/icon/icon.css';
 @import '../../components/logo/logo.css';
+@import '../../components/tabs/tabs.css';
 
 :root {
   --white: #ffffff;

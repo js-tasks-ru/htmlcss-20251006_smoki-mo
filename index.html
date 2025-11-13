@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body class="page">
     <header class="header">
       <div class="container">
         <div class="header__container">
           <svg class="logo header__logo">
-            <use href="./assets/images/logo.svg"/>
+            <use href="./assets/images/logo.svg" />
           </svg>
           <h1 class="header__title">Reusable component library</h1>
         </div>
       </div>
     </header>
-    <main class="main-section">
-      <div class="container">
-        <div class="main-section__container">
-          <div class="card">
-            <div class="card__main">
-              <div class="card__container">
-                <div class="card__preview"></div>
+    <main class="tabs">
+      <input class="tabs__input" id="tab-1" type="radio" name="tab" checked />
+      <input class="tabs__input" id="tab-2" type="radio" name="tab" />
+      <input class="tabs__input" id="tab-3" type="radio" name="tab" />
+      <input class="tabs__input" id="tab-4" type="radio" name="tab" />
+      <div class="tabs__scroller">
+        <div class="container">
+          <ul class="tabs__list">
+            <li>
+              <label class="tabs__label" for="tab-1">All components</label>
+            </li>
+            <li><label class="tabs__label" for="tab-2">Elements</label></li>
+            <li><label class="tabs__label" for="tab-3">Containers</label></li>
+            <li><label class="tabs__label" for="tab-4">Templates</label></li>
+          </ul>
+        </div>
+      </div>
+      <section class="main-section tabs__content tabs__content_1">
+        <div class="container">
+          <div class="main-section__container">
+            <div class="card">
+              <div class="card__main">
+                <div class="card__container">
+                  <div class="card__preview"></div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="card__container">
+                  <h5 class="card__title">Tooltip</h5>
+                </div>
               </div>
             </div>
-            <div class="card__footer">
-              <div class="card__container">
-                <h5 class="card__title">Tooltip</h5>
+            <div class="card">
+              <div class="card__main">
+                <div class="card__container">
+                  <div class="card__preview"></div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="card__container">
+                  <h5 class="card__title">Custom form elements</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card__main">
-              <div class="card__container">
-                <div class="card__preview"></div>
+            <div class="card">
+              <div class="card__main">
+                <div class="card__container">
+                  <div class="card__preview"></div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="card__container">
+                  <h5 class="card__title">Calendar</h5>
+                </div>
               </div>
             </div>
-            <div class="card__footer">
-              <div class="card__container">
-                <h5 class="card__title">Custom form elements</h5>
+            <div class="card">
+              <div class="card__main">
+                <div class="card__container">
+                  <div class="card__preview"></div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="card__container">
+                  <h5 class="card__title">Modal dialog</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card__main">
-              <div class="card__container">
-                <div class="card__preview"></div>
+            <div class="card">
+              <div class="card__main">
+                <div class="card__container">
+                  <div class="card__preview"></div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="card__container">
+                  <h5 class="card__title">Histogram</h5>
+                </div>
               </div>
             </div>
-            <div class="card__footer">
-              <div class="card__container">
-                <h5 class="card__title">Calendar</h5>
+            <div class="card">
+              <div class="card__main">
+                <div class="card__container">
+                  <div class="card__preview"></div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__main">
-              <div class="card__container">
-                <div class="card__preview"></div>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="card__container">
-                <h5 class="card__title">Modal dialog</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__main">
-              <div class="card__container">
-                <div class="card__preview"></div>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="card__container">
-                <h5 class="card__title">Histogram</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__main">
-              <div class="card__container">
-                <div class="card__preview"></div>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="card__container">
-                <h5 class="card__title">Avatar</h5>
+              <div class="card__footer">
+                <div class="card__container">
+                  <h5 class="card__title">Avatar</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="main-section tabs__content tabs__content_2">
+        <div class="container">
+          <div class="main-section__container">Elements</div>
+        </div>
+      </section>
+      <section class="main-section tabs__content tabs__content_3">
+        <div class="container">
+          <div class="main-section__container">Containers</div>
+        </div>
+      </section>
+      <section class="main-section tabs__content tabs__content_4">
+        <div class="container">
+          <div class="main-section__container">Templates</div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container container_small">
         <h2 class="footer__title">About</h2>
-        <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+        <p class="footer__description">
+          This project is a collection of professionally designed, pre-built,
+          fully responsive HTML snippets you can drop into your projects. Get
+          started by checking out our free preview components, or browsing the
+          PNG previews in the categories you're most curious about.
+        </p>
       </div>
     </footer>
   </body>
