@@ -1,0 +1,65 @@
+.theme {
+  position: relative;
+}
+
+.theme__input {
+  position: absolute;
+  left: -100vw;
+}
+
+.theme__state {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.theme__input:disabled ~ .theme__state {
+  pointer-events: none;
+}
+
+.theme__icon {
+  color: var(--grey-3);
+}
+
+.theme__control {
+  width: 52px;
+  height: 28px;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  padding: 1px;
+}
+
+.theme__input:checked ~ .theme__state .theme__control {
+  background: var(--blue-1);
+  border: 1px solid var(--blue-1);
+}
+
+.theme__input:disabled ~ .theme__state .theme__control {
+  background: var(--grey-2);
+  border: 1px solid var(--grey-2);
+}
+
+.theme__circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  background: var(--grey-2);
+  transform: translateX(0);
+}
+
+.theme__input:checked ~ .theme__state .theme__circle {
+  background: var(--white);
+  transform: translateX(100%);
+}
+
+.theme__input:disabled ~ .theme__state .theme__circle {
+  background: var(--grey-3);
+  opacity: 0.25;
+}
+
+.theme__input:checked:disabled ~ .theme__state .theme__circle {
+  background: var(--grey-1);
+  opacity: 1;
+}

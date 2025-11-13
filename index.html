@@ -3,16 +3,40 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./10-lection8/01-theme-changer/theme.css">
+    <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="container">
-        <div class="header__container">
+        <div class="header__top">
           <svg class="logo header__logo">
             <use href="./assets/images/logo.svg"/>
           </svg>
-          <h1 class="header__title">Reusable component library</h1>
+          <div class="header__theme-changer">
+            <label class="theme">
+              <input
+                class="theme__input"
+                id="theme-changer"
+                type="checkbox"
+                name="theme"
+                value="dark"
+              />
+              <div class="theme__state">
+                <svg class="icon theme__icon">
+                  <use href="../../assets/images/icons.svg#sun" />
+                </svg>
+                <div class="theme__control">
+                  <div class="theme__circle"></div>
+                </div>
+                <svg class="icon theme__icon">
+                  <use href="../../assets/images/icons.svg#moon" />
+                </svg>
+              </div>
+            </label>
+          </div>
         </div>
+        <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
     <main class="main-section">
