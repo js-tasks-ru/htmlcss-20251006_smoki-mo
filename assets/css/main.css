@@ -12,6 +12,8 @@
 @import '../../components/icon/icon.css';
 @import '../../components/logo/logo.css';
 
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
+
 :root {
   --white: #ffffff;
   --black: #212429;
