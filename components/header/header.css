@@ -43,10 +43,6 @@
   display: flex;
 }
 
-.header__menu {
-  z-index: 1;
-}
-
 .header__logo {
   margin: 0 auto;
   color: var(--logo-color);
