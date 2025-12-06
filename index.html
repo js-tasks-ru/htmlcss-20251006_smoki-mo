@@ -15,26 +15,28 @@
             <use href="./assets/images/logo.svg"/>
           </svg>
           <div class="header__theme-changer">
-            <label class="theme toggler">
-              <input
-                class="toggler__input"
-                id="theme-changer"
-                type="checkbox"
-                name="theme"
-                value="dark"
-              />
-              <div class="toggler__state">
-                <svg class="icon theme__icon">
-                  <use href="../../assets/images/icons.svg#sun" />
-                </svg>
-                <div class="toggler__control">
-                  <div class="toggler__circle"></div>
+            <div class="theme">
+              <label class="toggler">
+                <input
+                  class="toggler__input"
+                  id="theme-changer"
+                  type="checkbox"
+                  name="theme"
+                  value="dark"
+                />
+                <div class="toggler__state">
+                  <svg class="icon theme__icon">
+                    <use href="../../assets/images/icons.svg#sun" />
+                  </svg>
+                  <div class="toggler__control">
+                    <div class="toggler__circle"></div>
+                  </div>
+                  <svg class="icon theme__icon">
+                    <use href="../../assets/images/icons.svg#moon" />
+                  </svg>
                 </div>
-                <svg class="icon theme__icon">
-                  <use href="../../assets/images/icons.svg#moon" />
-                </svg>
-              </div>
-            </label>
+              </label>
+            </div>
           </div>
         </div>
         <h1 class="header__title">Reusable component library</h1>
