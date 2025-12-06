@@ -39,8 +39,19 @@
   }
 }
 
-.header__burger {
+.header__open-burger-menu {
   display: flex;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--grey-4);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header__open-burger-menu {
+    display: none;
+  }
 }
 
 .header__menu {

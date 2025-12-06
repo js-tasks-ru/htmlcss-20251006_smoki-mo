@@ -13,14 +13,6 @@
   transform: translateX(0);
 }
 
-.burger-menu__open {
-  border: none;
-  background: none;
-  padding: 0;
-  color: var(--grey-4);
-  cursor: pointer;
-}
-
 .burger-menu__close {
   border: none;
   background: var(--grey-2);
@@ -36,10 +28,6 @@
 
 @media (min-width: 768px) {
   .burger-menu {
-    display: none;
-  }
-
-  .burger-menu__open {
     display: none;
   }
 }
