@@ -1,0 +1,7 @@
+.theme {
+  display: inline-block;
+}
+
+.theme__icon {
+  color: var(--grey-3);
+}
