@@ -10,7 +10,7 @@
 
 .main-section_inner {
   padding: 0;
-  background: var(--white);
+  background: var(--main-bg);
 }
 
 @media (min-width: 768px) {

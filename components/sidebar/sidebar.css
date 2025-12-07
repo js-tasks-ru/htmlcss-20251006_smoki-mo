@@ -8,7 +8,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--font-color);
   margin: 0;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .sidebar__link {
-  color: var(--black);
+  color: var(--font-color);
 }
 
 .sidebar__link_current {

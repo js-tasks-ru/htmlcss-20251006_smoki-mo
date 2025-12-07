@@ -1,6 +1,6 @@
 .card {
   border-radius: 8px;
-  background: var(--white);
+  background: var(--main-bg);
   box-shadow: 0px 2px 4px 0px #2124290d;
 }
 
@@ -58,7 +58,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: var(--black);
+  color: var(--font-color);
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
