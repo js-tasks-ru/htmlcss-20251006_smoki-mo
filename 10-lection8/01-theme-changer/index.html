@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="./theme.css" />
+    <style>
+      html[data-theme-dark] {
+        background: #000;
+      }
+      .demo {
+        padding: 20px 200px;
+      }
+    </style>
+    <script defer src="./theme-changer.js"></script>
+  </head>
+  <body class="demo">
+    <div class="theme">
+      <label class="toggler">
+        <input
+          class="toggler__input"
+          id="theme-changer"
+          type="checkbox"
+          name="theme"
+          value="dark"
+        />
+        <div class="toggler__state">
+          <svg class="icon theme__icon">
+            <use href="../../assets/images/icons.svg#sun" />
+          </svg>
+          <div class="toggler__control">
+            <div class="toggler__circle"></div>
+          </div>
+          <svg class="icon theme__icon">
+            <use href="../../assets/images/icons.svg#moon" />
+          </svg>
+        </div>
+      </label>
+    </div>
+  </body>
+</html>

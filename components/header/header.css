@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid var(--grey-2);
   padding: 16px 0 69px;
-  background: var(--white);
+  background: var(--main-bg);
 }
 
 .header_in-menu {
@@ -60,6 +60,7 @@
 
 .header__logo {
   margin: 0 auto;
+  color: var(--logo-color);
 }
 
 @media (min-width: 768px) {
@@ -83,7 +84,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  color: var(--grey-4);
+  color: var(--font-color);
   margin: 48px 0 0;
 }
 
@@ -92,7 +93,6 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: var(--black);
     margin: 38px 0 0;
   }
 }

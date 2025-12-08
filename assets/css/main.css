@@ -33,6 +33,18 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --main-bg: var(--white);
+  --grey-bg: #f9fafc;
+  --font-color: var(--black);
+  --logo-color: var(--black);
+}
+
+html[data-theme-dark] {
+  --main-bg: var(--black);
+  --grey-bg: #495057;
+  --font-color: #ffffff75;
+  --logo-color: var(--grey-1);
 }
 
 body {
