@@ -1,18 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../10-lection8/01-theme-changer/theme.css">
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
   </head>
   <body class="page">
     <header class="header header_inner">
       <div class="container">
         <div class="header__top">
+          <button
+            class="header__open-burger-menu"
+            id="burger-menu-open"
+            type="button"
+          >
+            <svg class="icon">
+              <use href="../assets/images/icons.svg#menu" />
+            </svg>
+          </button>
+          <div class="burger-menu header__menu" id="burger-menu">
+            <div class="header header_in-menu">
+              <div class="container">
+                <div class="header__top">
+                  <button
+                    class="burger-menu__close"
+                    id="burger-menu-close"
+                    type="button"
+                  >
+                    <svg class="icon">
+                      <use href="../assets/images/icons.svg#x" />
+                    </svg>
+                  </button>
+                  <svg class="logo header__logo">
+                    <use href="../assets/images/logo.svg" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <aside class="sidebar sidebar_menu">
+                <section>
+                  <h4 class="sidebar__title">Components</h4>
+                  <nav>
+                    <ul class="sidebar__list">
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Modal</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Tooltip</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Avatar</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Calendar</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link sidebar__link_current" href="#"
+                          >Histogram</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Custom form elements</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </section>
+              </aside>
+            </div>
+          </div>
           <svg class="logo header__logo">
-            <use href="../assets/images/logo.svg"/>
+            <use href="../assets/images/logo.svg" />
           </svg>
           <div class="header__theme-changer">
             <div class="theme">
@@ -50,12 +113,26 @@
                 <h4 class="sidebar__title">Components</h4>
                 <nav>
                   <ul class="sidebar__list">
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Modal</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Tooltip</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Avatar</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Calendar</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link sidebar__link_current" href="#">Histogram</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Custom form elements</a></li>
+                    <li class="sidebar__item">
+                      <a class="sidebar__link" href="#">Modal</a>
+                    </li>
+                    <li class="sidebar__item">
+                      <a class="sidebar__link" href="#">Tooltip</a>
+                    </li>
+                    <li class="sidebar__item">
+                      <a class="sidebar__link" href="#">Avatar</a>
+                    </li>
+                    <li class="sidebar__item">
+                      <a class="sidebar__link" href="#">Calendar</a>
+                    </li>
+                    <li class="sidebar__item">
+                      <a class="sidebar__link sidebar__link_current" href="#"
+                        >Histogram</a
+                      >
+                    </li>
+                    <li class="sidebar__item">
+                      <a class="sidebar__link" href="#">Custom form elements</a>
+                    </li>
                   </ul>
                 </nav>
               </section>
@@ -69,7 +146,9 @@
     </main>
     <footer class="footer footer_inner">
       <div class="container">
-        <h5 class="footer__title footer__title_small">Reusable component library</h5>
+        <h5 class="footer__title footer__title_small">
+          Reusable component library
+        </h5>
       </div>
     </footer>
   </body>

@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+.sidebar_menu .sidebar__title {
+  color: var(--grey-3);
+}
+
 .sidebar__list {
   list-style-type: none;
   margin: 16px 0 0;
@@ -20,10 +24,19 @@
   gap: 4px;
 }
 
+.sidebar_menu .sidebar__list {
+  gap: 16px;
+}
+
 .sidebar__item {
   font-family: Inter;
   font-size: 14px;
   line-height: 22px;
+}
+
+.sidebar_menu .sidebar__item {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .sidebar__link {
